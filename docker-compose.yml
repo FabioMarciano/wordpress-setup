@@ -26,6 +26,7 @@ services:
     working_dir: /var/www/html
     volumes:
       - ./wp-content:/var/www/html/wp-content
+      - ./service-worker.js:/var/www/html/service-worker.js
       - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
 volumes:
   db:
