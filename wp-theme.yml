@@ -1,0 +1,8 @@
+#
+# Map WordPress themes from external (non-wordpress-setup folder) folder
+#
+
+services:
+  themes:
+    volumes:
+      - ../wordpress-theme/test-theme:/var/www/html/wp-content/themes/test-theme

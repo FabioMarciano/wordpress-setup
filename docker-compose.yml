@@ -24,6 +24,10 @@ services:
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
     working_dir: /var/www/html
+    # Extends wp-theme map file
+    extends:
+      file: wp-theme.yml
+      service: themes
     volumes:
       - ./wp-content:/var/www/html/wp-content
       - ./service-worker.js:/var/www/html/service-worker.js
