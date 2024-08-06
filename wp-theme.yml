@@ -5,4 +5,6 @@
 services:
   themes:
     volumes:
-      - ../wordpress-theme/test-theme:/var/www/html/wp-content/themes/test-theme
+      #- ../wordpress-theme/wp-theme-pure/dist/wp-theme-pure-1.0.0:/var/www/html/wp-content/themes/wp-theme-pure
+      #- ../wordpress-plugin/wp-plugin-pure-pwa/dist/wp-plugin-pure-pwa-1.0.0:/var/www/html/wp-content/plugins/wp-plugin-pure-pwa
+      - ../wordpress-theme/wp-theme-anbima/dist/wp-theme-anbima-1.0.0:/var/www/html/wp-content/themes/wp-theme-anbima
